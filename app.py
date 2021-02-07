@@ -7,7 +7,7 @@ LABELS = 1
 BUTTONS = 2
 
 def save_to_file():
-    filename = filedialog.asksaveasfilename(defaultextension=".txt", initialdir = ".",title = "Select file",filetypes = ((".txt","*.txt"),("all files","*.*")))
+    filename = filedialog.asksaveasfilename(defaultextension=".txt", initialdir = "./programs",title = "Select file",filetypes = ((".txt","*.txt"),("all files","*.*")))
     print(filename)
     if filename != '':
         with open(filename, 'w') as text_file:
@@ -15,7 +15,7 @@ def save_to_file():
                 text_file.write(line + "\n")
 
 def load_from_file():
-    filename = filedialog.askopenfilename(initialdir = ".",title = "Select file",filetypes = ((".txt","*.txt"),("all files","*.*")))
+    filename = filedialog.askopenfilename(initialdir = "./programs",title = "Select file",filetypes = ((".txt","*.txt"),("all files","*.*")))
     if filename != '':    
         with open(filename, 'r') as text_file:
             code.delete(1.0, "end")
