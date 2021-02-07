@@ -14,4 +14,4 @@
 ------.            drukuje 'l'
 --------.          drukuje 'd'
 >+.                drukuje '!'
->.                 nowa linia
+>.                 nowa linias
